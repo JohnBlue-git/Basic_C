@@ -9,6 +9,12 @@ Object: to use FILE
 
 int main()
 {
+  ////// interaction
+  //char name_please[33];
+  //printf("Enter a name:");
+  //scanf("%s", &name_please);  
+  
+  ////// FILE
   FILE *fp1, *fp2, *fp3;
   fp1 = fopen("file.txt", "r");// r:read w:write a:read/write
   fp2 = fopen("file.txt", "a");
