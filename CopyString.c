@@ -49,4 +49,12 @@ int main()
     cp3[6] = '\0';
     printf("partial name = %s\n\n", cp3);
   }
+  
+  //char * strcat ( char * destination, const char * source );
+  char str1[80] = "abc";// suggest to longer than
+  char str2[] = "xyz";
+  strcat(str1, str2);
+  printf("%s\n", str1);// abcxyz
+  strncat(str1, str2, 2);// only 2 character of str2
+  printf("%s\n", str1); // abcxyzxy
 }
